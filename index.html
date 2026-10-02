@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f8f5" />
+    <meta name="description" content="پیدا؛ راهی ساده و دلنشین برای جست‌وجو در وب." />
+    <title>پیدا — جست‌وجوی وب، ساده‌تر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" id="brandHome" aria-label="بازگشت به صفحهٔ اصلی پیدا">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none">
+              <path d="M19.5 7.25a12.25 12.25 0 1 0 7.57 21.88l7.24 7.24a2.25 2.25 0 0 0 3.18-3.18l-7.23-7.24A12.25 12.25 0 0 0 19.5 7.25Z" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" />
+              <path d="m19.5 13.25 1.55 4.7 4.7 1.55-4.7 1.55-1.55 4.7-1.55-4.7-4.7-1.55 4.7-1.55 1.55-4.7Z" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="brand-copy"><strong>پیدا</strong><small>جست‌وجوی وب</small></span>
+        </a>
+
+        <nav class="top-nav" aria-label="ناوبری اصلی">
+          <a class="top-link" href="#discover">موضوع‌های داغ</a>
+          <a class="top-link" href="#about">دربارهٔ پیدا</a>
+          <button class="icon-button theme-toggle" type="button" aria-label="تغییر پوسته" title="تغییر پوسته">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.7" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.4A8.5 8.5 0 0 1 8.6 3.9 8.6 8.6 0 1 0 20.1 15.4Z" /></svg>
+          </button>
+          <a class="avatar-link" href="#about" aria-label="درباره پیدا"><span>پ</span></a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="home-view" id="homeView" aria-labelledby="heroTitle">
+          <div class="hero-backdrop" aria-hidden="true">
+            <span class="hero-orb orb-one"></span>
+            <span class="hero-orb orb-two"></span>
+            <span class="hero-orbit orbit-one"></span>
+            <span class="hero-orbit orbit-two"></span>
+            <span class="hero-star star-one">✳</span>
+            <span class="hero-star star-two">✦</span>
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-eyebrow"><span class="eyebrow-dot"></span> راهی تازه برای کشف وب</div>
+            <div class="hero-wordmark" aria-hidden="true">
+              <span class="wordmark-icon"><svg viewBox="0 0 44 44" fill="none"><path d="M19.5 7.25a12.25 12.25 0 1 0 7.57 21.88l7.24 7.24a2.25 2.25 0 0 0 3.18-3.18l-7.23-7.24A12.25 12.25 0 0 0 19.5 7.25Z" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><path d="m19.5 13.25 1.55 4.7 4.7 1.55-4.7 1.55-1.55 4.7-1.55-4.7-4.7-1.55 4.7-1.55 1.55-4.7Z" fill="currentColor"/></svg></span>
+              <span>پیدا</span>
+            </div>
+            <h1 id="heroTitle">دنبال چی می‌گردی؟</h1>
+            <p class="hero-description">از یک سؤال کوچک تا ایده‌ای بزرگ،<br class="mobile-break" /> راهت به دنیای وب از این‌جا شروع می‌شود.</p>
+
+            <form class="search-form hero-search" id="homeSearch" role="search" autocomplete="off">
+              <button class="search-submit" type="submit" aria-label="جست‌وجو">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4" /><path d="m15.5 15.5 4 4" /></svg>
+              </button>
+              <label class="visually-hidden" for="homeInput">عبارت مورد نظرت را جست‌وجو کن</label>
+              <input id="homeInput" name="q" type="search" placeholder="هر چیزی که می‌خواهی پیدا کن..." spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-controls="homeSuggestions" />
+              <button class="clear-search" type="button" aria-label="پاک کردن جست‌وجو" title="پاک کردن" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
+              </button>
+              <button class="voice-search" type="button" aria-label="جست‌وجو با صدا" title="جست‌وجو با صدا">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3" /><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-3.5 0h7" /></svg>
+              </button>
+              <span class="search-divider" aria-hidden="true"></span>
+              <span class="search-shortcut" aria-hidden="true">/</span>
+              <div class="suggestions" id="homeSuggestions" role="listbox" aria-label="پیشنهادهای جست‌وجو" hidden></div>
+            </form>
+            <div class="search-hint"><span class="keycap">Enter</span> برای جست‌وجو <span class="hint-separator">·</span> یا یکی از پیشنهادها را انتخاب کن</div>
+
+            <div class="trending-row" aria-label="جست‌وجوهای پیشنهادی">
+              <span class="trending-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c1.4 3.1 5.5 4.1 5.5 8.8a5.5 5.5 0 0 1-11 0c0-2.8 1.4-4.8 3.2-6.4.1 2.3 1.1 3.3 2.1 3.8.8-1.9.7-4-.2-6.2Z" /></svg> پرجست‌وجو</span>
+              <button type="button" class="query-chip" data-query="هوش مصنوعی">هوش مصنوعی <span>↗</span></button>
+              <button type="button" class="query-chip" data-query="طبیعت‌گردی ایران">طبیعت‌گردی <span>↗</span></button>
+              <button type="button" class="query-chip" data-query="تغذیه سالم">تغذیه سالم <span>↗</span></button>
+            </div>
+          </div>
+
+          <section class="discover-section" id="discover" aria-labelledby="discoverTitle">
+            <div class="section-heading">
+              <div>
+                <span class="section-kicker">برای شروعِ کشف</span>
+                <h2 id="discoverTitle">موضوع‌های داغ امروز</h2>
+              </div>
+              <span class="live-note"><span class="live-dot"></span> انتخاب سردبیر</span>
+            </div>
+
+            <div class="topic-grid">
+              <button class="topic-card topic-lilac" type="button" data-query="هوش مصنوعی به زبان ساده">
+                <span class="topic-art art-ai" aria-hidden="true">
+                  <span class="art-glow"></span>
+                  <svg viewBox="0 0 140 110" fill="none"><rect x="39" y="25" width="62" height="59" rx="19" transform="rotate(-8 39 25)" fill="#fff" fill-opacity=".84"/><path d="m62 39-10 19 13-1-4 15 20-24-14 2 5-11" fill="#7565d9"/><circle cx="103" cy="25" r="8" fill="#f5b94b"/><circle cx="34" cy="83" r="5" fill="#b8dfd3"/></svg>
+                  <span class="art-caption">IDEA / 01</span>
+                </span>
+                <span class="topic-copy"><span class="topic-label">فناوری</span><strong>هوش مصنوعی، به زبان ساده</strong><span class="topic-subtitle">از سؤال تا پاسخ؛ یک نگاه روشن</span></span>
+                <span class="topic-arrow" aria-hidden="true">↗</span>
+              </button>
+
+              <button class="topic-card topic-peach" type="button" data-query="چطور خواب بهتری داشته باشیم">
+                <span class="topic-art art-sleep" aria-hidden="true">
+                  <span class="art-glow"></span>
+                  <svg viewBox="0 0 140 110" fill="none"><path d="M80 18a30 30 0 1 0 35 42A34 34 0 0 1 80 18Z" fill="#fff" fill-opacity=".88"/><path d="m45 75 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Zm68-45 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#ffb55f"/><circle cx="94" cy="77" r="7" fill="#ffcfac"/><circle cx="112" cy="81" r="3" fill="#fff"/></svg>
+                  <span class="art-caption">WELL / 02</span>
+                </span>
+                <span class="topic-copy"><span class="topic-label">سبک زندگی</span><strong>راز یک خواب آرام‌تر</strong><span class="topic-subtitle">عادت‌های کوچک، تفاوت‌های بزرگ</span></span>
+                <span class="topic-arrow" aria-hidden="true">↗</span>
+              </button>
+
+              <button class="topic-card topic-mint" type="button" data-query="شهرهای سبز آینده">
+                <span class="topic-art art-city" aria-hidden="true">
+                  <span class="art-glow"></span>
+                  <svg viewBox="0 0 140 110" fill="none"><path d="M24 89V51l27-15v53H24Zm34 0V28l28-14v75H58Zm35 0V48l23 12v29H93Z" fill="#fff" fill-opacity=".8"/><path d="M34 58h8m-8 10h8m25-28h9m-9 10h9m-9 10h9m-9 10h9m25-1h6m-6 10h6" stroke="#5fa38e" stroke-width="3" stroke-linecap="round"/><path d="M24 89h92" stroke="#408778" stroke-width="3" stroke-linecap="round"/><circle cx="105" cy="28" r="10" fill="#f2c972"/></svg>
+                  <span class="art-caption">FUTURE / 03</span>
+                </span>
+                <span class="topic-copy"><span class="topic-label">آینده</span><strong>شهرهایی برای زندگی بهتر</strong><span class="topic-subtitle">نگاهی به فردای سبزِ شهرها</span></span>
+                <span class="topic-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </section>
+
+          <aside class="privacy-note" id="about">
+            <span class="privacy-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 19 6v5.5c0 4.4-3 7.9-7 9.5-4-1.6-7-5.1-7-9.5V6l7-3Z"/><path d="m9 12 2 2 4-4" /></svg></span>
+            <span><strong>ساده و بی‌دردسر</strong><small>بدون ساخت حساب کاربری؛ فقط بنویس و پیدا کن.</small></span>
+            <span class="privacy-badge">حریم خصوصی‌ات مهم است <span>✳</span></span>
+          </aside>
+        </section>
+
+        <section class="results-view" id="resultsView" aria-labelledby="resultsTitle" hidden>
+          <div class="results-search-row">
+            <form class="search-form compact-search" id="resultsSearch" role="search" autocomplete="off">
+              <button class="search-submit" type="submit" aria-label="جست‌وجو">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4" /><path d="m15.5 15.5 4 4" /></svg>
+              </button>
+              <label class="visually-hidden" for="resultsInput">جست‌وجوی دوباره</label>
+              <input id="resultsInput" name="q" type="search" placeholder="جست‌وجو در وب..." spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-controls="resultsSuggestions" />
+              <button class="clear-search" type="button" aria-label="پاک کردن جست‌وجو" title="پاک کردن" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
+              </button>
+              <button class="voice-search" type="button" aria-label="جست‌وجو با صدا" title="جست‌وجو با صدا">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3" /><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-3.5 0h7" /></svg>
+              </button>
+              <span class="search-divider" aria-hidden="true"></span>
+              <span class="search-shortcut" aria-hidden="true">/</span>
+              <div class="suggestions" id="resultsSuggestions" role="listbox" aria-label="پیشنهادهای جست‌وجو" hidden></div>
+            </form>
+            <button class="back-home" type="button" id="backHome"><span aria-hidden="true">↗</span> صفحهٔ اصلی</button>
+          </div>
+
+          <div class="results-intro">
+            <div class="results-heading-copy">
+              <span class="results-overline"><span class="results-overline-dot"></span> کاوش در وب</span>
+              <h1 id="resultsTitle">نتایج جست‌وجو</h1>
+            </div>
+            <p class="results-description" id="resultsDescription">در حال آماده‌سازی نتایج مرتبط...</p>
+          </div>
+
+          <nav class="result-tabs" aria-label="نوع نتایج">
+            <button class="result-tab active" type="button" data-tab="web" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3c2.2 2.4 3.3 5.4 3.3 9s-1.1 6.6-3.3 9c-2.2-2.4-3.3-5.4-3.3-9S9.8 5.4 12 3Z"/></svg> وب</button>
+            <button class="result-tab" type="button" data-tab="images"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8.5" cy="9" r="1.5"/><path d="m4 17 5-5 3.5 3.5 2.5-2.5 5 5"/></svg> تصاویر</button>
+            <button class="result-tab" type="button" data-tab="videos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z"/></svg> ویدئوها</button>
+            <button class="result-tab" type="button" data-tab="news"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="M8 8h8m-8 4h8m-8 4h5"/></svg> اخبار</button>
+            <button class="result-tab" type="button" data-tab="maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15m6-12v15"/></svg> نقشه</button>
+          </nav>
+
+          <div class="results-layout">
+            <section class="results-main" aria-label="نتایج جست‌وجو">
+              <div class="result-list" id="resultList" aria-live="polite" aria-busy="true"></div>
+              <div class="result-footer-note" id="resultFooterNote" hidden><span class="sparkle-mark">✳</span> پیدا، برای جست‌وجوی بهتر ساخته شده است.</div>
+            </section>
+            <aside class="knowledge-panel" id="knowledgePanel" aria-label="خلاصهٔ موضوع"></aside>
+          </div>
+
+          <div class="related-searches" id="relatedSearches" hidden>
+            <h2>شاید این‌ها هم به کارت بیاید</h2>
+            <div class="related-chips"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>© پیدا <span id="footerYear"></span></span>
+        <span class="footer-center"><i></i> جست‌وجو باید ساده باشد.</span>
+        <a href="#about">دربارهٔ ما <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
